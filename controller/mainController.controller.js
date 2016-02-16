@@ -1,11 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/m/MessageToast",
-	"sap/ui/model/json/JSONModel",
-	"sap/ui/model/resource/ResourceModel"
-], function (Controller, MessageToast, JSONModel, ResourceModel){
+	"sap/m/MessageToast"
+], function (Controller, MessageToast){
 
-	var core = sap.ui.getCore();
+// 	var core = sap.ui.getCore();
 
 	return Controller.extend("controller.mainController", {
 
@@ -24,7 +22,7 @@ sap.ui.define([
 		* @memberOf controller.mainController
 		*/
 //		onBeforeRendering: function() {
-//	
+//
 //		},
 
 		/**
@@ -45,7 +43,7 @@ sap.ui.define([
 		* @memberOf controller.mainController
 		*/
 //		onExit: function() {
-//	
+//
 //		}
 
 
@@ -53,13 +51,9 @@ sap.ui.define([
 		* Called when the Button pointing to View2 is pressed.
 		* @memberOf controller.mainController
 		*/
-		onGoToPage2_pressed: function () {
-			// navigate to page2
-			// var app = this.getView();
-			// app.to("view.view2");
+        onGoToPage2pressed: function () {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("detail");
-//			oRouter.
 		},
 
 		/**
@@ -68,16 +62,14 @@ sap.ui.define([
 		*/
 		onInputChanged: function() {
 			// read msg from i18n model
-	        var oBundle = this.getView().getModel("i18n").getResourceBundle();
-	        var sRecipient = this.getView().getModel().getProperty("/recipient/name");
-//	        var sRecipient = sap.ui.getCore().byId('input1').getValue();
-//	        var sRecipient = core.byId('input1').getValue();
-	        var sMsg = oBundle.getText("helloMsg", [sRecipient, "today"]);
-	        // show message
-	        MessageToast.show(sMsg, {
+            var oBundle = this.getView().getModel("i18n").getResourceBundle();
+            var sRecipient = this.getView().getModel().getProperty("/recipient/name");
+            var sMsg = oBundle.getText("helloMsg", [sRecipient, "today"]);
+            // show message
+            MessageToast.show(sMsg, {
 				duration: 2000,
 				animationDuration: 500
-	        });
+            });
 		},
 		onOpenDialog : function () {
 			this.getOwnerComponent().helloDialog.open(this.getView());

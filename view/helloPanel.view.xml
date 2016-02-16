@@ -9,7 +9,7 @@
 		<content>
 			<Button
 				text="{i18n>showHelloButtonText}"
-				press="onGoToPage2_pressed"
+				press="onGoToPage2pressed"
 				class="myAppDemoWT myCustomButton"/>
 			<Input
 				value="{/recipient/name}"
