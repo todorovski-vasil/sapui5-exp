@@ -5,9 +5,9 @@
   "controller/view2.controller.js": "1455639612297",
   "css/style.css": "1455639911622",
   "i18n/i18n.properties": "1455618452015",
-  "index.html": "1455622504007",
+  "index.html": "1455722414234",
   "invoices.json": "1455618452026",
-  "manifest.json": "1455638613931",
+  "manifest.json": "1455725624120",
   "model/formatter.js": "1455618452005",
   "view/app.view.xml": "1455618452030",
   "view/helloDialog.fragment.xml": "1455618452032",
@@ -16,5 +16,9 @@
   "view/invoiceListRemote.view.xml": "1455618452029",
   "view/mainView.view.js": "1455637497994",
   "view/view2.view.js": "1455618452021",
-  "controller/HelloDialog.js": "1455640907863"
+  "controller/HelloDialog.js": "1455640907863",
+  "test/testService.html": "1455722285668",
+  "localService/mockdata/Invoices.json": "1455722529868",
+  "localService/metadata.xml": "1455708276685",
+  "localService/mockserver.js": "1455725510312"
 }

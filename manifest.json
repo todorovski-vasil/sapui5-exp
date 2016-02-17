@@ -15,13 +15,6 @@
 	            "uri": "/invoices.json",
 	            "type": "JSON"
 	        },
-	        "invoiceMockRemote": {
-		        "uri": "/destinations/northwind/V3/Northwind/Northwind.svc/",
-	            "type": "OData",
-	            "settings": {
-	                "odataVersion": "2.0"
-		        }
-	        },
 	        "invoiceRemote": {
 		        "uri": "/invoiceRemote/",
 	            "type": "OData",
@@ -45,7 +38,7 @@
   	},
   	"sap.ui5": {
 		"_version": "1.1.0",
-		"rootView":{
+	    "rootView":{
 			"viewName": "view.app",
 			"type": "XML"
 		},
@@ -57,7 +50,7 @@
 		},
 		"config": {
 	  		"invoiceLocal": "/invoices.json",
-	  		"invoiceRemote": "/invoiceRemote/"
+	  		"invoiceRemote": "/invoiceMockRemote/"
 		},
 		"models": {
 			"i18n": {
